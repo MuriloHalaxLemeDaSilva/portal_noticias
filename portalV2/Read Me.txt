@@ -1,0 +1,17 @@
+Como executar o Projeto Portal de Notícias com PHP e MySQL
+
+1. Baixe o arquivo zip
+2. Extraia o arquivo e copie a pasta newsportal
+3. Cole dentro do diretório raiz (para xampp: xamp/htdocs, para wamp: /www, para lamp: var/www/html)
+4. Crie um banco de dados com o nome newsportal
+5. Importe o arquivo newsportal.sql (disponível dentro do pacote zip na pasta sql file)
+6. Execute o script http://localhost/newsportal (frontend)
+7. Para o painel administrativo: http://localhost/newsportal/admin
+
+Credenciais para o painel administrativo:
+Usuário: admin
+Senha: Test@123
+
+Credenciais para o painel do sub-administrador:
+Usuário: subadmin
+Senha: Test@123

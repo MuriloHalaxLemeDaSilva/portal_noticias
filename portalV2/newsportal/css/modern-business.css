@@ -1,0 +1,142 @@
+/* Modern News Portal CSS */
+
+body {
+  background: #f5f7fa;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  color: #253959;
+  margin: 0;
+  padding-top: 60px;
+  line-height: 1.6;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 70px;
+  }
+}
+
+/* NavBar Example */
+.navbar {
+  background: #253959;
+  color: #fff;
+  border-bottom: 2px solid #ff9f43;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 24px;
+  transition: background 0.2s;
+  border-radius: 4px;
+}
+.navbar a:hover {
+  background: #ff9f43;
+  color: #253959;
+}
+
+/* Carousel */
+.carousel-item {
+  height: 68vh;
+  min-height: 340px;
+  background: #dedede no-repeat center center/cover;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(50,50,93,.08);
+  overflow: hidden;
+}
+
+/* Carousel Caption Overlay Example */
+.carousel-caption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  background: rgba(37,57,89,0.65);
+  color: #fff;
+  padding: 24px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+@media (max-width: 700px) {
+  .carousel-caption {
+    padding: 10px 6px;
+    font-size: 92%;
+  }
+  .carousel-item {
+    height: 45vh;
+    min-height: 220px;
+    border-radius: 8px;
+  }
+}
+
+/* Portfolio/News Cards */
+.portfolio-item {
+  margin-bottom: 36px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  transition: transform .18s cubic-bezier(.4,0,.2,1), box-shadow .22s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-6px) scale(1.025);
+  box-shadow: 0 8px 32px 0 rgba(51,82,154,.13);
+  background: #f9fbfe;
+}
+
+.portfolio-item img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 180px;
+  transition: filter .18s;
+  filter: brightness(92%);
+}
+
+.portfolio-item:hover img {
+  filter: brightness(105%);
+}
+
+.portfolio-item .caption {
+  padding: 16px 20px 18px 20px;
+  font-weight: 500;
+  font-size: 1.04rem;
+}
+
+/* Button styling */
+.btn-primary {
+  background: #ff9f43;
+  color: #253959;
+  padding: 0.6em 1.9em;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(255,159,67,.10);
+  transition: background .17s, color .17s;
+}
+.btn-primary:hover {
+  background: #253959;
+  color: #fff;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 2.3rem;
+  margin: 2.4rem 0 1rem 0;
+  color: #253959;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* Responsive grid for cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(290px,1fr));
+  gap: 36px;
+  margin: 1.5rem 0;
+}
